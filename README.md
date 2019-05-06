@@ -1,2 +1,5 @@
 # Sp2Module
-Dev environment to load custom code in Splatoon 2
+
+Sp2Module: The c++ code that'll run in the game
+
+Sp2Patcher: The patcher that'll be used to apply patches easily
