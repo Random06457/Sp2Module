@@ -1,0 +1,23 @@
+#get the smHandle
+b -> sdk+0xA9D74 -> !svcConnectToNamedPortHook(unsigned int*, char*)
+
+#test
+bl -> main+0x808EC -> !ret_ShootinRangeName()
+
+#nn::socket::initialize
+b -> sdk+0x9AD70 -> !socketInitHook()
+
+#patch nn::diag::detail::PutImpl & nn::diag::detail::LogImpl
+b -> main+0x1553FC4 -> !diagPutImplHook(nn::diag::LogMetaData*, char const*, unsigned long)
+b -> main+0x1551454 -> !diagLogImplHook(nn::diag::LogMetaData*, char const*, ...)
+
+
+#MiniGame Draw Hook
+b -> main+0xC55274 -> !MiniGameEtcDrawHook(void*, agl::lyr::RenderInfo*)
+
+#disable layout text draw
+b -> main+0xC5CA6C -> !MiniGameSetTextBoxHook(void*)
+b -> main+0xC5CA88 -> !MiniGameSetTextBoxHook(void*)
+
+#disable MiniGame play (mov w1, #2)
+data -> main+0xC5B0DC -> 41008052

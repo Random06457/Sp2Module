@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "NX",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/libnx/nx",
+                "${workspaceFolder}/libnx/nx/external/bsd/include",
+                "C:/devkitPro/devkitA64/aarch64-none-elf/include",
+                "C:/devkitPro/portlibs/switch/include",
+                "C:/devkitPro/devkitA64/aarch64-none-elf/include/c++/8.3.0",
+                "C:/devkitPro/devkitA64/aarch64-none-elf/include/c++/8.3.0/tr1",
+                "C:/devkitPro/devkitA64/aarch64-none-elf/include/c++/8.3.0/bits"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/devkitPro/devkitA64/bin/aarch64-none-elf-g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

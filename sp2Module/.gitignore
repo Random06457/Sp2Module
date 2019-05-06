@@ -1,0 +1,16 @@
+*.bat
+*.exe
+*.dll
+*.zip
+*.nso
+*.nsp
+*.npdm
+*.elf
+**/build
+
+rtld
+main
+sdk
+subsdk0
+
+.vscode/ipch

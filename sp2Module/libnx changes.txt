@@ -1,0 +1,17 @@
+https://github.com/switchbrew/libnx/tree/2729cafbe08d0b21fa7923d0eebef9f129e6e97a
+
+---------------sm.c / sm.h-----------------------
+void smSetHandle(Handle session)
+{
+    g_smHandle = session;
+}
+
+-----------------switch.h----------------------
+#include "switch/services/bsd.h"
+
+----------------hid.c/hid.h--------------------
+
+void hidSetSharedMemPtr(HidSharedMemory* mem)
+{
+    g_overwriteSharedMemPtr = mem;
+}
